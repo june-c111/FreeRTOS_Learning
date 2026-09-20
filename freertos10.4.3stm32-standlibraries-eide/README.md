@@ -49,8 +49,12 @@
 
 | 任务 | 引脚 | 高/低电平保持时间 | 完整周期 | 优先级 | 栈深度 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `Task1` | PA0 | 300 ms | 600 ms | 2 | 128 words |
+| `Task1` | PA0 | 500 ms | 1000 ms | 2 | 128 words |
 | `Task2` | PA1 | 500 ms | 1000 ms | 2 | 128 words |
+
+当前 PA0 和 PA1 均保持 500 ms 高电平、500 ms 低电平，LED 完整闪烁周期为
+1000 ms。此次调整将 `Task1` 的单次延时由 300 ms 增加到 500 ms，使两个 LED
+以相同频率闪烁。
 
 如果任一任务创建失败，程序会在错误循环中持续翻转 PA0。
 
@@ -126,9 +130,9 @@ vTaskStartScheduler();
 
 ```c
 GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_SET);
-vTaskDelay(pdMS_TO_TICKS(300));
+vTaskDelay(pdMS_TO_TICKS(500));
 GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_RESET);
-vTaskDelay(pdMS_TO_TICKS(300));
+vTaskDelay(pdMS_TO_TICKS(500));
 ```
 
 在 FreeRTOS 任务中，应优先使用 `vTaskDelay()` 等阻塞 API，避免使用空循环延时

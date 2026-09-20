@@ -3,13 +3,13 @@
         {
             "name": "Target 1",
             "includePath": [
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\Start",
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\Library",
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\User",
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\HardWare",
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\System\\source",
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\System\\include",
-                "d:\\Code\\FreeRTOS学习\\模板\\freertos10.4.3stm32-standlibraries-eide\\System\\portable"
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\Start",
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\Library",
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\User",
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\HardWare",
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\System\\source",
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\System\\include",
+                "d:\\Code\\FreeRTOS_Learning\\demo_example\\FreeRTOS_Learning\\freertos10.4.3stm32-standlibraries-eide\\System\\portable"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",
