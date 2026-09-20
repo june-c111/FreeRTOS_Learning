@@ -40,9 +40,9 @@ void vTask1(void *pvParameters)
     while (1)
     {
 		GPIO_WriteBit(GPIOA,GPIO_Pin_0,(BitAction)1);
-        vTaskDelay(pdMS_TO_TICKS(500));  // 延时500ms（毫秒转FreeRTOS ticks）
+        vTaskDelay(pdMS_TO_TICKS(1500));  // 延时500ms（毫秒转FreeRTOS ticks）
 		GPIO_WriteBit(GPIOA,GPIO_Pin_0,(BitAction)0);
-        vTaskDelay(pdMS_TO_TICKS(500));  // 延时500ms（毫秒转FreeRTOS ticks）
+        vTaskDelay(pdMS_TO_TICKS(1500));  // 延时500ms（毫秒转FreeRTOS ticks）
     }
 }
 void vTask2(void *pvParameters)
@@ -50,8 +50,8 @@ void vTask2(void *pvParameters)
     while (1)
     {
 		GPIO_WriteBit(GPIOA,GPIO_Pin_1,(BitAction)1);
-        vTaskDelay(pdMS_TO_TICKS(500));  // 延时500ms
+        vTaskDelay(pdMS_TO_TICKS(1500));  // 延时500ms
 		GPIO_WriteBit(GPIOA,GPIO_Pin_1,(BitAction)0);
-        vTaskDelay(pdMS_TO_TICKS(500));  // 延时500ms
+        vTaskDelay(pdMS_TO_TICKS(1500));  // 延时500ms
     }
 }
